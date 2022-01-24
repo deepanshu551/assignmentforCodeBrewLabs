@@ -32,7 +32,7 @@ const Forms=(props)=> {
           <FormLabel>
               Name
           </FormLabel>
-          <Input value={name} onChange={(e)=>setName(e.target.value)}/>
+          <Input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
       </FormControl>
       <br/>
       <FormControl>
@@ -40,7 +40,7 @@ const Forms=(props)=> {
 <FormLabel>
     Phone
 </FormLabel>
-<Input value={contact} onChange={(e)=>setContact(e.target.value)}/>
+<Input type="number" value={contact} onChange={(e)=>setContact(e.target.value)}/>
 </FormControl>
 <br/>
 <FormControl>
@@ -48,7 +48,7 @@ const Forms=(props)=> {
 <FormLabel>
     Email
 </FormLabel>
-<Input value={email} onChange={(e)=>setEmail(e.target.value)}/>
+<Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
 </FormControl>
 <br/>
 <Button sx={{m:2}} variant='contained' onClick={(e)=>submitButton(e)}>Edit</Button>

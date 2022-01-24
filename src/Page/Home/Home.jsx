@@ -9,6 +9,7 @@ const Home=(props)=> {
 useEffect(()=>{
 
   const stringifyState=JSON.stringify(props.contacts);
+ console.log("d",stringifyState)
     localStorage.setItem('data',stringifyState);
 })
  

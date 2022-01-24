@@ -13,6 +13,9 @@ let initialState={contacts:[]};
 
 export default function App() {
   initialState={contacts:JSON.parse(localStorage.getItem("data"))}
+  if(initialState===null){
+    initialState={contacts:[]};
+  }
   const store=createStore(Reducer,initialState);
 
   return <Provider store={store}>
